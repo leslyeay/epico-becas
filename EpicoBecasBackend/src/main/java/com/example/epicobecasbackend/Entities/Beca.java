@@ -11,6 +11,7 @@ public class Beca {
     Date fechaInicio;
     Date fechaFin;
     String nombre;
+    String brochure;
     List<TipoDocumento> documentos;
     boolean estado;
     int disponibilidad; // Cupos disponibles
