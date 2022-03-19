@@ -12,7 +12,12 @@ public class Beca {
     Date fechaFin;
     String nombre;
     String brochure;
-    List<TipoDocumento> documentos;
+    TipoDocumento tipoDocumento;
     boolean estado;
     int disponibilidad; // Cupos disponibles
+}
+
+enum TipoDocumento {
+    CEDULA,
+    PASAPORTE
 }
