@@ -1,0 +1,34 @@
+#page-footer-wrapper {
+  background-color: #2b2994 !important;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+#page-footer-wrapper p {
+  text-align: center;
+}
+
+#page-footer {
+  font-size: 15px !important;
+  line-height: 0.75;
+  color: white;
+  font-weight: 500 !important;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+p {
+  overflow-wrap: break-word !important;
+}
+
+@media (max-width: 1000px) {
+  #page-footer {
+    font-size: 15px;
+    line-height: 1.75;
+    color: white;
+    font-weight: 500 !important;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
