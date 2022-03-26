@@ -12,7 +12,6 @@ import DS from '../../content/images/DS.jpg';
 import AI from '../../content/images/AI.jpg';
 import '../../styles/carousel.css';
 import { Container } from "@mui/material";
-import { useNavigate } from 'react-router-dom' 
 
 export default class ScholarshipCarousel extends Component {
     constructor(props) {
@@ -58,12 +57,11 @@ export default class ScholarshipCarousel extends Component {
                                 FullStack
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
+                                Conoce las bases de la programación y adquiere una base sólida de herramientas para desenvolverte como desarrollador.
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button color="secondary" onClick={() => useNavigate("/contacto")}>Ver más</Button>
+                            <Button color="secondary">Ver más</Button>
                         </CardActions>
                     </Card>
                     <Card sx={{ maxWidth: 345 }}>
@@ -78,12 +76,11 @@ export default class ScholarshipCarousel extends Component {
                                 Frontend
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
+                                En este programa aprenderás acerca del diseño de aplicaciones web con las últimas tecnologías del mercado.
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button>Ver más</Button>
+                            <Button color="secondary">Ver más</Button>
                         </CardActions>
                     </Card>
                     <Card sx={{ maxWidth: 345 }}>
@@ -98,12 +95,11 @@ export default class ScholarshipCarousel extends Component {
                                 Ciencia de datos
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
+                                Conviértete en quien manipula infinitas cantidades de datos para crear impacto y predecir futuros desenlaces.
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button color="secondary">Leer más</Button>
+                            <Button color="secondary">Ver más</Button>
                         </CardActions>
                     </Card>
                     <Card sx={{ maxWidth: 345 }}>
@@ -118,12 +114,11 @@ export default class ScholarshipCarousel extends Component {
                                 Inteligencia Artificial
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
+                                La Inteligencia Artificial cambiará de manera radical la forma de trabajar, de hacer negocios y la vida de los usuarios.
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button variant="outlined" color="secondary" >Ver más</Button>
+                            <Button color="secondary">Ver más</Button>
                         </CardActions>
                     </Card>
                 </Slider>

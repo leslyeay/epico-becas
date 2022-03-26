@@ -7,20 +7,6 @@
 ::after {
   box-sizing: border-box;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
 @media (min-width: 544px) and (max-width: 1199px) {
   body {
     font-size: calc(14px + (14 - 14) * ((100vw - 554px) / 646));
@@ -40,7 +26,7 @@ summary {
   background-size: cover;
 }
 .header-layout-fixed .page-header-inner {
-  /* position: absolute; */
+  position: fixed;
   position: initial;
   top: 0;
   left: 0;
@@ -71,92 +57,12 @@ summary {
   flex: 0 0 100%;
   max-width: 100%;
 }
-.col-xs-1,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-sm-1,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-md-1,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-lg-1,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-xl-1,
-.col-xl-2,
-.col-xl-3,
-.col-xl-4,
-.col-xl-5,
-.col-xl-6,
-.col-xl-7,
-.col-xl-8,
-.col-xl-9,
-.col-xl-10,
-.col-xl-11,
-.col-xl-12,
-.col-xxl-1,
-.col-xxl-2,
-.col-xxl-3,
-.col-xxl-4,
-.col-xxl-5,
-.col-xxl-6,
-.col-xxl-7,
-.col-xxl-8,
-.col-xxl-9,
-.col-xxl-10,
-.col-xxl-11,
-.col-xxl-12 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 100%;
-}
 .header-01 .header-wrap {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-
-
 .mobile-menu .header-01 .branding {
   flex-grow: 1;
 }
@@ -173,59 +79,6 @@ a {
 }
 a:hover {
   color: #15b4e9 !important;
-}
-a,
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-select,
-textarea,
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.page-close-mobile-menu,
-.tm-swiper:hover .swiper-nav-button,
-.tm-swiper .swiper-nav-button:hover,
-.portfolio-details-gallery .overlay,
-.tm-button,
-.tm-box-icon.style-8 .icon,
-.tm-instagram.style-grid .inner .overlay,
-.tm-product-categories.style-carousel .cat-content,
-.widget_recent_entries li,
-.widget_recent_comments li,
-.widget_archive li,
-.widget_categories li,
-.widget_meta li,
-.widget_product_categories li,
-.widget_rss li,
-.widget_pages li,
-.widget_nav_menu li,
-.insight-core-bmw li,
-.tm-posts-widget-wrapper.style-01 .post-widget-overlay,
-.mini-cart .widget_shopping_cart_content,
-.woocommerce .cats .cat-text,
-.woocommerce .cats .cat-title,
-.woocommerce .cats .cat-count,
-.woocommerce.single-product div.product .woocommerce-tabs ul.tabs li,
-.woocommerce.single-product div.product .woocommerce-tabs ul.tabs li a {
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .page-links::after,
 .branding__logo::after,
@@ -1586,7 +1439,8 @@ a {
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;  
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%) !important;
 }
 .headroom--not-top .page-header-inner {
   height: 70px;
@@ -1597,26 +1451,6 @@ a {
 .page-header-inner {
   border-bottom: 1px solid transparent;
 }
-header {
-
-  background: #fff;
-
-  position: fixed;
-
-  top: 0;
-
-  left: 0;
-
-  width: 100%;
-
-  z-index: 999px;
-
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-
-}
-
-
-
 .header-sticky-both .headroom.headroom--not-top .page-header-inner {
   position: fixed;
   top: 0;
@@ -1660,6 +1494,5 @@ header {
   left: 0;
   z-index: 9999;
   width: 100%;
-  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
   animation: headerSlideDown 0.95s ease forwards;
 }

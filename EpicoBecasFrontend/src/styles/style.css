@@ -1592,7 +1592,7 @@ input[type="submit"]:focus {
 }
 
 .header-layout-fixed .page-header-inner {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -3128,7 +3128,7 @@ input[type="submit"]:focus {
 
 .desktop-menu .menu--primary {
   position: relative;
-  text-align: center;
+  text-align: right;
 }
 
 .desktop-menu .menu--primary .sm-simple {
